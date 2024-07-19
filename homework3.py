@@ -2,7 +2,6 @@ from datetime import datetime
 import random
 
 def get_days_from_today(date):
-
     try:
         form_date = datetime.strptime(date, '%Y-%m-%d').date()
         today_date = datetime.today().date()
@@ -20,4 +19,3 @@ def get_numbers_ticket(min, max, quantity):
     else:
         return []
 
-get_numbers_ticket(1, 1000, 1001)
