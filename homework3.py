@@ -13,9 +13,11 @@ def get_days_from_today(date):
 
 
 def get_numbers_ticket(min, max, quantity):
-    if 1 <= min <= 1000 and 1 <= max <= 1000 and 1 <= quantity <= 1000:
-            random_samples = sorted(random.sample(range(min, max + 1), quantity))
-            return random_samples
-    else:
-        return []
+    try:
+        if 1 <= min <= 1000 and 1 <= max <= 1000:
+            return sorted(random.sample(range(min, max + 1), quantity))
+        else:
+            return []
+    except:
+         return []
 
