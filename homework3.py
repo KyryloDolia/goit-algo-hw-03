@@ -18,6 +18,6 @@ def get_numbers_ticket(min, max, quantity):
             return sorted(random.sample(range(min, max + 1), quantity))
         else:
             return []
-    except:
+    except ValueError:
          return []
 
