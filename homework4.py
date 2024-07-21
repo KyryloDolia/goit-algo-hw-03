@@ -11,4 +11,4 @@ def total_salary(path: str) -> tuple:
         lines = [el.strip().split(',') for el in fh.readlines()]
         summ = sum([int(line[1]) for line in lines])
         avg = summ // len(lines)
-        return (summ, avg)
+        return summ, avg
