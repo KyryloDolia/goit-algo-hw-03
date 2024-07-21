@@ -21,7 +21,6 @@ def get_cats_info(path: str) -> list:
 
 
 
-
 def total_salary(path: str) -> tuple:
     
     path = Path(path)
